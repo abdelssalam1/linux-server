@@ -80,12 +80,12 @@ create postgresql user catalog
 
 - $ sudo su - postgres
 - $ psql
-- # CREATE ROLE catalog WITH PASSWORD 'password';
-- # ALTER USER catalog CREATEDB;
-- # CREATE DATABASE catalog WITH OWNER catalog;
-- # \c catalog
-- # REVOKE ALL ON SCHEMA public FROM public;
-- # GRANT ALL ON SCHEMA public TO catalog;
+- CREATE ROLE catalog WITH PASSWORD 'password';
+- ALTER USER catalog CREATEDB;
+- CREATE DATABASE catalog WITH OWNER catalog;
+- \c catalog
+- REVOKE ALL ON SCHEMA public FROM public;
+- GRANT ALL ON SCHEMA public TO catalog;
 - \q
 - exit
 
